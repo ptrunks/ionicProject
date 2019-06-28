@@ -1,0 +1,31 @@
+<ion-header>
+
+</ion-header>
+<ion-content id="login">
+  <div class="cont">
+    <div class="topo">
+      <div>
+        <div class="login">
+          <div class="col-12 text-center imagem-top">
+            <img id="logo" width="270" src="../assets/imgs/logoblack.png" alt="...">
+          </div>
+          <div class="login__form">
+            <div>
+              <div padding class="buttons-welcome">
+                <!-- <button ion-button block (click)="signup()">{{ 'SIGNUP' | translate }}</button> -->
+                <button ion-button block (click)="login()" class="login">{{ 'LOGIN' | translate }}</button>
+                <button ion-button block (click)="loginGoogle()"
+                  class="loginGoogle"><span>{{ 'LOGINWITHGOOGLE' | translate }}</span>
+                  <ion-icon name="logo-googleplus"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <p class="login__signup">
+                {{ 'You dont have an account?' | translate }}&nbsp;<a (click)="signup()">{{ 'SIGNUP' | translate }}</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

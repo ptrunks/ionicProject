@@ -1,0 +1,7 @@
+{
+  "name": "dumpnow",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

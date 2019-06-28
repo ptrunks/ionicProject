@@ -1,0 +1,10 @@
+
+<ion-content>
+  <!-- <ion-input class="search" (click)="showAddressModal()" [(ngModel)]="address.place" type="text" placeholder="Digite um endereço"></ion-input> -->
+
+  <div [hidden]="!showMap" class="map" #map id="map"></div>
+  <div [hidden]="showMap">
+    <label>Carregando Map...</label>
+  </div>
+</ion-content>
+

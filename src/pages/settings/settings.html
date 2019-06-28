@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Configurações</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+        <div class="avatar-container">
+          <img [src]="urlAvatar" alt="">
+        </div>
+
+      </ion-col>
+      <ion-col class="name-style">
+          <h3>{{nameUser}}</h3>
+          <button ion-button (click)="goTo('ProfilePage')">Editar</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+        <button ion-button mode="ios" clear (click)="goTo('LocationPage')">Local</button>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+        <button ion-button mode="ios" clear (click)="goTo('HelpPage')">Ajuda</button>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+        <button ion-button mode="ios" clear (click)="goTo('AboutPage')">Sobre</button>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+        <button ion-button mode="ios" clear (click)="logout()">Sair</button>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

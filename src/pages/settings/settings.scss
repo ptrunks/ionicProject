@@ -1,0 +1,25 @@
+page-settings {
+
+    .scroll-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        // width: 200px;
+    }
+
+    .name-style{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    button{
+        width: 50%;
+        letter-spacing: 2px;    
+    }
+
+}

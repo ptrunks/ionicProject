@@ -1,0 +1,26 @@
+page-profile {
+
+    .avatar-container{
+        display: flex;
+        justify-content: center;
+
+        img{
+            border-radius: 50%;
+            height: 13em;
+        }
+    }
+
+    h3{
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    button{
+        margin-top: 40px;
+    }
+
+    ion-item{
+        padding: 0 !important;
+    }
+
+}

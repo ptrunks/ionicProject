@@ -25705,6 +25705,33 @@ ion-navbar.toolbar {
   min-height: 45px;
 }
 
+.tab {
+  margin-left: 50px;
+}
+
+.itens button {
+  font-size: 16px;
+  padding-top: 35px;
+}
+
+ion-icon {
+  padding-top: 35px;
+}
+
+.icons {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.arrow {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.about {
+  padding-top: 150px;
+}
+
 page-login form {
   padding: 10px;
 }

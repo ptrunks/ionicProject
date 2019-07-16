@@ -163,51 +163,59 @@ webpackEmptyAsyncContext.id = 239;
 var map = {
 	"../pages/about/about.module": [
 		655,
-		10
+		27
 	],
 	"../pages/ad/ad.module": [
 		656,
-		9
+		11
 	],
 	"../pages/help/help.module": [
 		657,
-		8
+		10
 	],
 	"../pages/location/location.module": [
 		658,
-		7
+		9
 	],
 	"../pages/login/login.module": [
 		659,
-		6
+		8
 	],
 	"../pages/map/map.module": [
-		661,
-		5
+		660,
+		7
 	],
 	"../pages/menu/menu.module": [
-		660,
-		4
+		661,
+		6
+	],
+	"../pages/politpriv/politpriv.module": [
+		680,
+		5
 	],
 	"../pages/profile/profile.module": [
 		662,
-		3
+		4
 	],
 	"../pages/settings/settings.module": [
 		663,
-		2
+		3
 	],
 	"../pages/signup/signup.module": [
 		664,
-		1
+		2
 	],
 	"../pages/tabs/tabs.module": [
 		665,
+		1
+	],
+	"../pages/termoserv/termoserv.module": [
+		682,
 		0
 	],
 	"../pages/welcome/welcome.module": [
 		666,
-		11
+		28
 	]
 };
 function webpackAsyncContext(req) {
@@ -559,9 +567,9 @@ var AutocompleteComponent = /** @class */ (function () {
         });
     };
     AutocompleteComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\myProject\ProjetoDeTCC-dev\src\components\autocomplete\autocomplete.html"*/'<ion-header>\n    <ion-toolbar>\n      <ion-title>Enter address</ion-title>\n      <ion-searchbar [(ngModel)]="autocomplete.query" [showCancelButton]="true"   (ionInput)="updateSearch()" (ionCancel)="dismiss()"></ion-searchbar>\n    </ion-toolbar>\n  </ion-header>\n  \n  <ion-content>\n    <ion-list>\n      <ion-item *ngFor="let item of autocompleteItems" tappable   (click)="chooseItem(item)">\n        {{ item }}\n      </ion-item>\n    </ion-list>\n  </ion-content>'/*ion-inline-end:"C:\myProject\ProjetoDeTCC-dev\src\components\autocomplete\autocomplete.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\projeto\ionicProject\src\components\autocomplete\autocomplete.html"*/'<ion-header>\n\n    <ion-toolbar>\n\n      <ion-title>Enter address</ion-title>\n\n      <ion-searchbar [(ngModel)]="autocomplete.query" [showCancelButton]="true"   (ionInput)="updateSearch()" (ionCancel)="dismiss()"></ion-searchbar>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n  \n\n  <ion-content>\n\n    <ion-list>\n\n      <ion-item *ngFor="let item of autocompleteItems" tappable   (click)="chooseItem(item)">\n\n        {{ item }}\n\n      </ion-item>\n\n    </ion-list>\n\n  </ion-content>'/*ion-inline-end:"C:\projeto\ionicProject\src\components\autocomplete\autocomplete.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* ViewController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* ViewController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* NgZone */]])
     ], AutocompleteComponent);
     return AutocompleteComponent;
 }());
@@ -615,9 +623,9 @@ var WelcomePage = /** @class */ (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-welcome',template:/*ion-inline-start:"C:\myProject\ProjetoDeTCC-dev\src\pages\welcome\welcome.html"*/'<ion-header>\n\n</ion-header>\n<ion-content id="login">\n  <div class="cont">\n    <div class="topo">\n      <div>\n        <div class="login">\n          <div class="col-12 text-center imagem-top">\n            <img id="logo" width="270" src="../assets/imgs/logoblack.png" alt="...">\n          </div>\n          <div class="login__form">\n            <div>\n              <div padding class="buttons-welcome">\n                <!-- <button ion-button block (click)="signup()">{{ \'SIGNUP\' | translate }}</button> -->\n                <button ion-button block (click)="login()" class="login">{{ \'LOGIN\' | translate }}</button>\n                <button ion-button block (click)="loginGoogle()"\n                  class="loginGoogle"><span>{{ \'LOGINWITHGOOGLE\' | translate }}</span>\n                  <ion-icon name="logo-googleplus"></ion-icon>\n                </button>\n              </div>\n            </div>\n            <p class="login__signup">\n                {{ \'You dont have an account?\' | translate }}&nbsp;<a (click)="signup()">{{ \'SIGNUP\' | translate }}</a>\n            </p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</ion-content>'/*ion-inline-end:"C:\myProject\ProjetoDeTCC-dev\src\pages\welcome\welcome.html"*/
+            selector: 'page-welcome',template:/*ion-inline-start:"C:\projeto\ionicProject\src\pages\welcome\welcome.html"*/'<ion-header>\n\n\n\n</ion-header>\n\n<ion-content id="login">\n\n  <div class="cont">\n\n    <div class="topo">\n\n      <div>\n\n        <div class="login">\n\n          <div class="col-12 text-center imagem-top">\n\n            <img id="logo" width="270" src="../assets/imgs/logoblack.png" alt="...">\n\n          </div>\n\n          <div class="login__form">\n\n            <div>\n\n              <div padding class="buttons-welcome">\n\n                <!-- <button ion-button block (click)="signup()">{{ \'SIGNUP\' | translate }}</button> -->\n\n                <button ion-button block (click)="login()" class="login">{{ \'LOGIN\' | translate }}</button>\n\n                <button ion-button block (click)="loginGoogle()"\n\n                  class="loginGoogle"><span>{{ \'LOGINWITHGOOGLE\' | translate }}</span>\n\n                  <ion-icon name="logo-googleplus"></ion-icon>\n\n                </button>\n\n              </div>\n\n            </div>\n\n            <p class="login__signup">\n\n                {{ \'You dont have an account?\' | translate }}&nbsp;<a (click)="signup()">{{ \'SIGNUP\' | translate }}</a>\n\n            </p>\n\n          </div>\n\n        </div>\n\n      </div>\n\n    </div>\n\n  </div>\n\n</ion-content>'/*ion-inline-end:"C:\projeto\ionicProject\src\pages\welcome\welcome.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_firebase_provider_service_firebase_provider_service__["a" /* FirebaseProviderServiceProvider */],
             __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["c" /* TranslateService */]])
     ], WelcomePage);
@@ -749,25 +757,27 @@ var AppModule = /** @class */ (function () {
                         deps: [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]]
                     }
                 }),
-                __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["f" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ad/ad.module#AdPageModule', name: 'AdPage', segment: 'ad', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/location/location.module#LocationPageModule', name: 'LocationPage', segment: 'location', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#ListMasterPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/menu/menu.module#MenuPageModule', name: 'MenuPage', segment: 'menu', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/settings/settings.module#SettingsPageModule', name: 'SettingsPage', segment: 'settings', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/welcome/welcome.module#WelcomePageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/politpriv/politpriv.module#PolitprivPageModule', name: 'PolitprivPage', segment: 'politpriv', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/termoserv/termoserv.module#TermoservPageModule', name: 'TermoservPage', segment: 'termoserv', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot()
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_9_ionic_angular__["c" /* IonicApp */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_9_ionic_angular__["d" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_21__components_autocomplete_autocomplete__["a" /* AutocompleteComponent */]
@@ -783,7 +793,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_10__ionic_native_google_plus_ngx__["a" /* GooglePlus */],
                 { provide: __WEBPACK_IMPORTED_MODULE_12__providers__["c" /* Settings */], useFactory: provideSettings, deps: [__WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]] },
                 // Keep this to enable Ionic's runtime error handling during development
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["d" /* IonicErrorHandler */] },
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_9_ionic_angular__["e" /* IonicErrorHandler */] },
                 __WEBPACK_IMPORTED_MODULE_17__providers_firebase_provider_service_firebase_provider_service__["a" /* FirebaseProviderServiceProvider */],
                 __WEBPACK_IMPORTED_MODULE_18__ionic_native_geolocation__["a" /* Geolocation */],
                 __WEBPACK_IMPORTED_MODULE_19__providers_location_location__["a" /* LocationProvider */],
@@ -1115,17 +1125,17 @@ var MyApp = /** @class */ (function () {
         this.nav.setRoot(page.component);
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Nav */])
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             template: "<ion-nav [root]=\"rootPage\"></ion-nav>"
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Platform */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_7__providers__["c" /* Settings */],
             __WEBPACK_IMPORTED_MODULE_5__ngx_translate_core__["c" /* TranslateService */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Config */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Config */],
             __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_2__providers_firebase_provider_service_firebase_provider_service__["a" /* FirebaseProviderServiceProvider */]])

@@ -1,6 +1,7 @@
 import { FirebaseProviderServiceProvider } from './../../providers/firebase-provider-service/firebase-provider-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { App } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,6 +16,7 @@ export class SettingsPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
+    public appCtrl: App,
     private firebaseProvider: FirebaseProviderServiceProvider) {
   }
 
@@ -28,7 +30,9 @@ export class SettingsPage {
   logout() {
     // this.firebaseProvider.logout();
     // this.navCtrl.popAll()
-    this.navCtrl.setRoot('WelcomePage');
+    // this.navCtrl.setRoot('WelcomePage');
+    this.appCtrl.getRootNav().setRoot('WelcomePage');
+
   }
 
 }
